@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast | Mradio</title>
+    <link rel="icon" type="icon" href="favicon.ico">
+    <link rel="stylesheet" href="podcast.css">
+</head>
+
+<body class="podcastbody-container">
+    <!-- Navbar Zone -->
+    <nav>
+        <div class="navbar-container">
+            <img class="logo-mradio" style="width: 140; height: 99px;" src="/Assets/Station-Logo.png"
+                alt="Station-Logo">
+            <ul class="ul-navigationbar">
+                <a href="index.html" class="home-button ">Home</a>
+                <a class="meetTeam-button">Meet Team</a>
+                <a class="podcast-button">Podcast</a>
+                <a href="news.html" class="news-button">News</a>
+                <a class="topChart-button">Top Chart</a>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar Zone End -->
+
+    <!-- Body Content -->
+    <h2 class="podcast-text">M-Radio Podcast</h2>
+    <!-- Body Content End -->
+
+    <!-- Podcast Zone -->
+    <div class="podcast-container">
+        <ul>
+            <img class="podcast-logo" style="border-radius: 50px;" src="/Assets/MradioPodcast.jpeg"
+                alt="Mradio-Podcast">
+        </ul>
+        <iframe class="podcastbar-container" style="border-radius:12px"
+            src="https://open.spotify.com/embed/episode/4D2XiDLEls3zGVthyDsG7T?utm_source=generator&t=0" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <br>
+    <div class="another-podcast">
+        <iframe id="hidden" class="podcastbar-container" style="display: none;" style="border-radius:12px"
+            src="https://open.spotify.com/embed/episode/1xk2fDIjD3mhGnEbwGhXXq?utm_source=generator&t=0" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <!-- Podcast Zone End -->
+    <br>
+    <!-- Java Script -->
+    <a class="button-more" type="button" onclick="document.getElementById('hidden').style.display='block'">Show
+        More</a>
+    <!-- Java Script End -->
+</body>
+
+</html>

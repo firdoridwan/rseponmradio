@@ -1,0 +1,148 @@
+*
+
+/* Navbar Zone */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.ul-navigationbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.logo-mradio {
+    margin-left: 20px;
+}
+
+.home-button {
+    text-decoration: none;
+    color: black;
+}
+
+.podcast-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.meetTeam-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.podcast-button {
+    color: gray;
+}
+
+.news-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.news-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.podcast-button:hover {
+    cursor: pointer;
+}
+
+.topChart-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+/* Navbar Zone End */
+
+/* Body Content */
+.podcast-logo {
+    display: flex;
+    margin-right: 150px;
+}
+/* Body Content End */
+
+/* Podcast Zone */
+.podcast-text {
+    display: flex;
+    text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+    font-size: 25px;
+    font-style: bold;
+    font-family: fantasy;
+    margin-left: 330px;
+}
+
+.podcast-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+}
+
+.another-podcast {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    margin-right: 490px;
+}
+
+.podcastbar-container {
+    box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 15px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.button-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #F00505;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-left: 280px;
+    margin-right: 750px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.button-more:hover {
+    background-color: aqua;
+    cursor: pointer;
+    color: #000000;
+    border: none;
+}
+/* Podcast Zone End */

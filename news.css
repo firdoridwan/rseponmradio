@@ -1,0 +1,214 @@
+*
+/* Navbar Zone */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.ul-navigationbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.logo-mradio {
+    margin-left: 20px;
+}
+
+.podcast-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.meetTeam-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.podcast-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.news-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+}
+
+.topChart-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+/* Navbar Zone End */
+
+/* Body Content */
+.body-container {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px;
+    margin-left: 210px;
+    margin-right: 170px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 15px 10px 5px 0px rgba(0,0,0,0.31);
+}
+
+.fotoberita1 {
+    display: flex;
+    width: 400px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.body-description {
+    display: flex;
+}
+
+.admin-photo {
+    width: 10%;
+    padding-top: 20px;
+}
+
+.headingberita-1 {
+    color: black;
+}
+
+.rangkuman-berita {
+    color: black;
+    font-size: 13px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.underline {
+    background-color: #000000;
+    height: 1px;
+    margin-right: 10px;
+}
+
+.comentview {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center
+}
+
+.views {
+    color: #000000;
+    margin-right: 0px;
+}
+
+.comments {
+    color: #000000;
+   margin-right: 300px;
+}
+
+.like-icon {
+    display: flex;
+    width: 4%;
+    margin-right: 20px;
+
+}
+
+.adminbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-name {
+    display: flex;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #000000; 
+    font-style: bold;
+}
+
+.date-text {
+    display: flex;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.adminbar-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    gap: 5px;
+}
+/* Body Content End */
+
+/* Hover */
+.rangkuman-berita:hover {
+    cursor: pointer;
+    color: #940707;
+}
+
+.admin-name:hover {
+    cursor: pointer;
+    color: #940707;
+}
+
+.comments:hover {
+    cursor: pointer;
+    color: #940707;
+}
+
+.like-icon:hover {
+    cursor: pointer;
+}
+/* Hover End */

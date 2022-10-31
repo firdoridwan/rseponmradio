@@ -1,0 +1,163 @@
+*
+body {
+    background-image: url('/Assets/Stream-background.png');
+    background-size: 200vh;
+}
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .navbar-container .ul-navigationbar .home-button .logo-mradio .body-container .on-air .radio-bar .program-text .program-logo {
+        width: 100%;
+    }
+    
+}
+/* Responsive End */
+
+
+/* Navbar Zone */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.ul-navigationbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.home-button {
+    text-decoration: none;
+    color: black;
+}
+
+.podcast-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo-mradio {
+    margin-left: 20px;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.meetTeam-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.podcast-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.news-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.news-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.topChart-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+/* Navbar Zone End */
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Radio Bar */
+.on-air {
+    display: flex;
+    width: 248px;
+    height: 62px;
+    margin-bottom: 50px;
+}
+
+.radio-bar {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 700px;
+}
+/* Radio Bar End */
+
+/* Body Bottom */
+.program-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 350px;
+    font-family: caudex,serif;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.program-logo {
+    display: flex;
+    width: 158px;
+    height: 127px;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+/* Body Bottom End */
+
+.test-streaming {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.stream-play {
+    display: flex;
+    color: aqua;
+}
