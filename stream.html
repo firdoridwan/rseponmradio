@@ -6,47 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming | Mradio</title>
-    <link rel="stylesheet" href="stream.css">
     <link rel="icon" type="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="stream.css">
 </head>
 
 <body class="stream-container">
     <!-- Navbar Zone -->
     <nav>
-        <div class="navbar-container">
-            <img class="logo-mradio" style="width: 140; height: 99px;" src="/Assets/Station-Logo.png"
-                alt="Station-Logo">
-            <ul class="ul-navigationbar">
-                <a href="index.html" class="home-button ">Home</a>
-                <a class="meetTeam-button">Meet Team</a>
-                <a href="podcast.html" class="podcast-button">Podcast</a>
-                <a href="news.html" class="news-button">News</a>
-                <a class="topChart-button">Top Chart</a>
-            </ul>
+        <div class="container">
+            <div class="navbar-container d-none d-md-flex">
+                <img class="logo-mradio" src="/Assets/Station-Logo.png" alt="Station-Logo">
+                <ul class="ul-navigationbar row d-none d-md-inline">
+                    <a href="index.html" class="home-button">Home</a>
+                    <a class="meetTeam-button">Meet Team</a>
+                    <a href="podcast.html" class="podcast-button">Podcast</a>
+                    <a href="news.html" class="news-button">News</a>
+                    <a class="topChart-button">Top Chart</a>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Navbar Zone End -->
 
     <!-- Body Zone -->
-    <div class="body-container">
-        <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
-    </div>
-    <div class="radio-bar">
-        <script
-            type="text/javascript">var cstrFreePlayerUid = 558141; var cstrFreePlayerTheme = "yellow"; var cstrFreePlayerColor = "0e0af7";</script>
-        <script type="text/javascript" src="//corscdn.caster.fm/freeplayer/FreePlanPlayerEmbed.js"></script>
-        <!--   DO NOT REMOVE THE LINKS BELOW, THEY  WILL BE HIDDEN (AND WILL HELP US A LOT)   --> <a
-            id="cstrFreePlayerBL1" href="//www.caster.fm/">Free Shoutcast Hosting</a><a id="cstrFreePlayerBL2"
-            href="//www.caster.fm/">Radio Stream Hosting</a>
-        <div id="cstrFreePlayerDiv"></div>
-    </div>
-    <h2 class="program-text">Program :</h2>
-    <div class="program-logo">
-        <img src="/Assets/sarangheo.png" alt="sarangheo">
-        <img src="/Assets/AADC.jpg" alt="AADC">
-        <img src="/Assets/morningvibes.png" alt="Morning-Vibes">
+    <div>
+        <div class="body-container d-none d-md-flex">
+            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
+        </div>
+        <div class="radio-bar d-none d-md-block">
+            <iframe frameborder="0" width="100%" height="170px" id="cstrFreePlayerFrame" scrolling="no" src="//www.caster.fm/widgets/em_player.php?jsinit=true&amp;uid=558141&amp;t=blue&amp;c=" allowtransparency="true"></iframe>
+        </div>
+        <h2 class="program-text d-none d-md-flex">Program :</h2>
+        <div class="program-logo d-none d-md-flex">
+            <img src="/Assets/sarangheo.png" alt="sarangheo">
+            <img src="/Assets/AADC.jpg" alt="AADC">
+            <img src="/Assets/morningvibes.png" alt="Morning-Vibes">
+        </div>
     </div>
     <!-- Body Zone End -->
+
+    <!-- Navbar Responsive -->
+    <div class="navbar-Responsive">
+        <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
+        <i class="d-xs-inline d-md-none fa-solid fa-burger burgir"></i>
+        <ul class="ul-navigationbar d-none menu">
+            <a href="index.html" class="home-buttonResponsive">Home</a>
+            <a class="meetTeam-buttonResponsive">Meet Team</a>
+            <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+            <a href="news.html" class="news-buttonResponsive">News</a>
+            <a class="topChart-buttonResponsive">Top Chart</a>
+        </ul>
+    </div>
+    <!-- Navbar Responsive End -->
+
+    <!-- Body Responsive -->
+    <div class="d-md-none">
+        <div class="body-container d-md-none d-xs-flex">
+            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
+        </div>
+        <div id="cstrFreePlayerDiv"><iframe frameborder="0" width="100%" height="170px" id="cstrFreePlayerFrame"
+                scrolling="no" src="//www.caster.fm/widgets/em_player.php?jsinit=true&amp;uid=558141&amp;t=blue&amp;c="
+                allowtransparency="true"></iframe></div>
+        <h2 class="program-textResponsive d-md-none d-xs-flex">Program :</h2>
+        <div class="program-logoResponsive d-md-none d-xs-flex">
+            <img src="/Assets/sarangheo.png" alt="sarangheo">
+            <img src="/Assets/AADC.jpg" alt="AADC">
+            <img src="/Assets/morningvibes.png" alt="Morning-Vibes">
+        </div>
+    </div>
+    <!-- Body Responsive End -->
+
+    <!-- Script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $('.menu').on('click', function (event) {
+            event.stopPropagation()
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.menu').toggleClass('d-none')
+        })
+
+        $('body').on('click', function () {
+            $('.menu').addClass('d-none')
+        })
+    </script>
+    <!-- Script End -->
 </body>
 
 </html>

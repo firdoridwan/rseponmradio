@@ -34,7 +34,9 @@ body {
 }
 
 .logo-mradio {
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    width: 140px; 
+    height: 99px;
 }
 
 .podcast-button {
@@ -80,22 +82,22 @@ body {
 
 /* Body Zone */
 .body-container {
-    display: flex;
-    margin-left: 5px;
+    /* display: flex; */
+    /* margin-left: 5px; */
     flex-direction: column;
     align-content: center;
     flex-wrap: nowrap;
-    margin-left: 200px;
+    margin-left: auto;
     justify-content: center
 }
 
 .body1-container {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
 .home-text {
-    display: flex;
+    /* display: flex; */
     letter-spacing: normal;
     vertical-align: baseline;
     font-weight: bold;
@@ -110,7 +112,7 @@ body {
 }
 
 .home-description {
-    display: flex;
+    /* display: flex; */
     font-size: 15px;
     font-style: italic;
     font-family: trirong,serif;
@@ -125,7 +127,7 @@ body {
 }
 
 .button-container {
-    display: flex;
+    /* display: flex; */
     border: 1px solid;
     border-radius: 25px;
     margin-left: 0px;
@@ -145,3 +147,105 @@ body {
     cursor: pointer;
 }
 /* Body Zone End */
+
+/* Responsive */
+
+.navbar-Responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: none;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 50%;
+}
+
+.logo-mradioResponsive {
+    width: 80px;
+    height: 60px;
+    background: none;
+    position: relative;
+}
+
+.home-buttonResponsive {
+    color: rgb(102, 102, 233);
+    font-size: 20px;
+}
+
+.meetTeam-buttonResponsive {
+    color: white;
+}
+
+.podcast-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.news-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.topChart-buttonResponsive {
+    color: white;
+}
+
+.body-containerResponsive {
+    display: flex;
+}
+
+.heading-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.home-textResponsive {
+    font-family: suez one, serif;
+    font-size: 40px;
+    text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
+    color: #F00505;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.home-descriptionResponsive {
+    display: flex;
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.button-containerResponsive {
+    display: flex;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: #F00505;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+/* Responsive End */

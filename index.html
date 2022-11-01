@@ -6,47 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Mradio</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar Zone -->
     <nav>
-        <div class="navbar-container">
-            <img class="logo-mradio" style="width: 140; height: 99px;" src="/Assets/Station-Logo.png"
-                alt="Station-Logo">
-            <ul class="ul-navigationbar">
-                <a class="home-button ">Home</a>
-                <a class="meetTeam-button">Meet Team</a>
-                <a href="podcast.html" class="podcast-button">Podcast</a>
-                <a href="news.html" class="news-button">News</a>
-                <a class="topChart-button">Top Chart</a>
-            </ul>
+        <div class="container">
+            <div class="navbar-container d-none d-md-flex">
+                <img class="logo-mradio" src="/Assets/Station-Logo.png" alt="Station-Logo">
+                <ul class="ul-navigationbar row d-none d-md-inline">
+                    <a class="home-button ">Home</a>
+                    <a class="meetTeam-button">Meet Team</a>
+                    <a href="podcast.html" class="podcast-button">Podcast</a>
+                    <a href="news.html" class="news-button">News</a>
+                    <a class="topChart-button">Top Chart</a>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Navbar Zone End -->
 
     <!-- Body Zone -->
-    <div class="body-container">
-        <div class="body1-container">
-            <h1 class="home-text">YOUR TRULY</h1>
-            <h1 class="home-text">FRIENDS</h1>
-        </div>
-        <div>
-            <h3 class="home-description">
-                Mradio merupakan radio komunitas mahasiswa Universitas Muhammadiyah Jakarta yang <br>
-                menjadi salah satu unit kegiatan mahasiswa, dengan tujuan melatih dan mengembangkan <br> bakat mahasiswa
-                di
-                bidang Broadcasting terutama di dunia Radio. Disini mahasiswa dapat <br> belajar membuat skrip, menjadi
-                penyiar, hingga cara memproduksi audio dengan standar <br> dan kualitas yang baik.
-            </h3>
-        </div>
-        <div href="stream.html">
-            <a href="stream.html" class="button-container" style="color: #ffffff;">Stream</a>
+    <div class="container col-8">
+        <div class="body-container row d-none d-md-flex">
+            <div class="body1-container">
+                <h1 class="home-text">YOUR TRULY</h1>
+                <h1 class="home-text">FRIENDS</h1>
+            </div>
+            <div>
+                <h3 class="home-description">
+                    Mradio merupakan radio komunitas mahasiswa Universitas Muhammadiyah Jakarta yang <br>
+                    menjadi salah satu unit kegiatan mahasiswa, dengan tujuan melatih dan mengembangkan <br> bakat
+                    mahasiswa
+                    di
+                    bidang Broadcasting terutama di dunia Radio. Disini mahasiswa dapat <br> belajar membuat skrip,
+                    menjadi
+                    penyiar, hingga cara memproduksi audio dengan standar <br> dan kualitas yang baik.
+                </h3>
+            </div>
+            <div href="stream.html">
+                <a href="stream.html" class="button-container" style="color: #ffffff;">Stream</a>
+            </div>
         </div>
     </div>
     <!-- Body Zone End -->
+
+    <!-- Navbar Responsive -->
+    <div class="navbar-Responsive">
+        <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
+        <i class="d-xs-inline d-md-none fa-solid fa-burger burgir"></i>
+        <ul class="ul-navigationbar d-none menu">
+            <a class="home-buttonResponsive">Home</a>
+            <a class="meetTeam-buttonResponsive">Meet Team</a>
+            <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+            <a href="news.html" class="news-buttonResponsive">News</a>
+            <a class="topChart-buttonResponsive">Top Chart</a>
+        </ul>
+    </div>
+    <!-- Navbar Responsive End -->
+
+    <!-- Body Zone Responsive -->
+    <div class="body-containerResponsive row d-md-none d-xs-inline">
+        <div class="heading-responsive text-center">
+            <h1 class="home-textResponsive text-center col d-xs-inline">YOUR TRULY</h1>
+            <h1 class="home-textResponsive col">FRIENDS</h1>
+        </div>
+        <div>
+            <h3 class="home-descriptionResponsive text-center">
+                Mradio merupakan radio komunitas mahasiswa Universitas Muhammadiyah Jakarta yang
+                menjadi salah satu unit kegiatan mahasiswa, dengan tujuan melatih dan mengembangkan bakat mahasiswa
+                di
+                bidang Broadcasting terutama di dunia Radio. Disini mahasiswa dapat belajar membuat skrip, menjadi
+                penyiar, hingga cara memproduksi audio dengan standar dan kualitas yang baik.
+            </h3>
+        </div>
+        <div href="stream.html">
+            <a href="stream.html" class="button-containerResponsive" style="color: #ffffff;">Stream</a>
+        </div>
+    </div>
+    <!-- Body Zone Responsive End -->
+
+    <!-- Script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $('.menu').on('click', function (event) {
+            event.stopPropagation()
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.menu').toggleClass('d-none')
+        })
+
+        $('body').on('click', function () {
+            $('.menu').addClass('d-none')
+        })
+    </script>
+    <!-- Script End -->
 </body>
 
 </html>

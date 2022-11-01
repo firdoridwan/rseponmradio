@@ -3,15 +3,6 @@ body {
     background-image: url('/Assets/Stream-background.png');
     background-size: 200vh;
 }
-/* Responsive */
-@media screen and (max-width: 800px) {
-    .navbar-container .ul-navigationbar .home-button .logo-mradio .body-container .on-air .radio-bar .program-text .program-logo {
-        width: 100%;
-    }
-    
-}
-/* Responsive End */
-
 
 /* Navbar Zone */
 .navbar-container {
@@ -54,7 +45,8 @@ body {
 }
 
 .logo-mradio {
-    margin-left: 20px;
+    width: 140px; 
+    height: 99px;
 }
 
 .home-button:hover {
@@ -161,3 +153,75 @@ body {
     display: flex;
     color: aqua;
 }
+
+/* Responsive */
+.navbar-Responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: none;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 50%;
+}
+
+.logo-mradioResponsive {
+    width: 80px;
+    height: 60px;
+    background: none;
+    position: relative;
+}
+
+.home-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.meetTeam-buttonResponsive {
+    color: white;
+}
+
+.podcast-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.news-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.topChart-buttonResponsive {
+    color: white;
+}
+
+.program-textResponsive {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.program-logoResponsive {
+    display: flex;
+    width: 130px;
+    height: 110px;
+    gap: 20px;
+}
+
+.program-textResponsive {
+    padding-top: 20px;
+}
+/* Responsive End */
