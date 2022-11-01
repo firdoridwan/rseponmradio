@@ -126,12 +126,10 @@ body {
     padding-bottom: 10px;
 }
 
-.button-container {
-    /* display: flex; */
+.stream-button {
     border: 1px solid;
     border-radius: 25px;
-    margin-left: 0px;
-    margin-right: 1000px;
+    margin-right: 100px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -140,9 +138,10 @@ body {
     padding: 10px;
     background-color: #F00505;
     text-decoration: none;
+    color: white;
 }
 
-.button-container:hover {
+.stream-button:hover {
     background-color: #3D9BE9;
     cursor: pointer;
 }
@@ -172,6 +171,7 @@ body {
     background-color: #000000;
     opacity: 80%;
 }
+
 .libutton {
     margin: 0;
     display: flex;
