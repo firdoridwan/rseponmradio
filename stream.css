@@ -165,6 +165,7 @@ body {
     margin-right: 15px;
     margin-left: 10px;
 }
+
 .menu {
     margin: 0;
     display: flex;
@@ -175,7 +176,20 @@ body {
     width: 50vw;
     height: 100vh;
     background-color: #000000;
-    opacity: 50%;
+    opacity: 80%;
+}
+
+.libutton {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    right: 0;
+    top: 100px;
+    width: 50vw;
+    height: 50vh;
+    font-style: bold;
+    font-size: 20px;
 }
 
 .logo-mradioResponsive {
