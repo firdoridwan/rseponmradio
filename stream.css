@@ -230,9 +230,10 @@ body {
 
 .program-logoResponsive {
     display: flex;
-    width: 130px;
-    height: 110px;
+    /* width: 50vw; */
+    height: 100px;
     gap: 20px;
+    margin-left: 0;
 }
 
 .program-textResponsive {
