@@ -1,4 +1,10 @@
 *
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #ffffff 50%, #ffffff 100%);
+
+}
+
 
 /* Navbar Zone */
 .navbar-container {
@@ -30,7 +36,8 @@
 }
 
 .logo-mradio {
-    margin-left: 20px;
+    width: 140px; 
+    height: 99px;
 }
 
 .home-button {
@@ -79,39 +86,151 @@
 }
 /* Navbar Zone End */
 
-/* Body Content */
+/* Body Zone */
+.podcast-profile {
+    display: flex;
+    background-color: #000000;
+    border-radius: 25px;
+    padding-left: 2px;
+    margin-bottom: 30px;
+}
+
 .podcast-logo {
-    display: flex;
-    margin-right: 150px;
+    margin-right: 50px;
+    width: 15vw;
+    border-radius: 25px;
 }
-/* Body Content End */
 
-/* Podcast Zone */
-.podcast-text {
+.heading-profile {
     display: flex;
-    text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
-    font-size: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.h4-profile {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.h1-profile {
+    margin-top: 0px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+/* Body Zone End */
+
+/* Responsive */
+.navbar-Responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: none;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 170px;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    background-position: left;
+    opacity: 80%;
+}
+
+.libutton {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    right: 170px;
+    top: 100px;
+    width: 50vw;
     font-style: bold;
-    font-family: fantasy;
-    margin-left: 330px;
+    font-size: 20px;
+    gap: 35px;
 }
 
-.podcast-container {
+.logo-mradioResponsive {
+    width: 80px;
+    height: 60px;
+    background: none;
+    position: relative;
+}
+
+.home-buttonResponsive {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.meetTeam-buttonResponsive {
+    color: white;
+}
+
+.podcast-buttonResponsive {
+    color: #3D9BE9;
+    text-decoration: none;
+}
+
+.news-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.topChart-buttonResponsive {
+    color: white;
+}
+
+.text-profileResponsive2 {
     display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.another-podcast {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    align-items: center;
-    margin-right: 490px;
+.episode-top {
+    padding-top: 35px;
 }
 
-.podcastbar-container {
+.podcast-logoResponsive {
+    width: 18vw;
+    height: 10vh;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+.h4-profileResponsive {
+    font-size: 10px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.h1-profileResponsive {
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
+}
+
+.podcast-containerResponsive {
+    display: flex;
+    right: 0;
+    left: 40px;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    /* padding-top: 110px; */
     box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
@@ -120,7 +239,7 @@
     margin-left: 200px;
 }
 
-.button-more {
+.button-moreResponsive {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,17 +251,15 @@
     background-color: #F00505;
     text-decoration: none;
     border-radius: 25px;
-    margin-left: 280px;
-    margin-right: 750px;
-    margin-top: 10px;
-    padding: 10px;
+    width: 50vw;
+    margin-top: 450px;
+    position: fixed;
+    height: 8vh;
     color: #ffffff;
+    right: 90px;
 }
 
-.button-more:hover {
-    background-color: aqua;
-    cursor: pointer;
-    color: #000000;
-    border: none;
+.button-moreResponsivediv {
+    display: flex;
 }
-/* Podcast Zone End */
+/* Responsive End */
