@@ -1,8 +1,13 @@
 *
 body {
-    background-image: url('/Assets/Home-background.png');
+    background-image: url('/Assets/Desktop\ -\ 9.png');
     background-size: 200vh;
+    background-color: #202124;
 }
+
+/* body {
+    background-color: #202124;
+} */
 
 /* Navbar Zone */
 .navbar-container {
@@ -42,7 +47,7 @@ body {
 .podcast-button {
     cursor: pointer;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .home-button {
@@ -51,6 +56,14 @@ body {
 
 .home-button:hover {
     cursor: pointer;
+}
+
+.meetTeam-button {
+    color: #ffffff;
+}
+
+.topChart-button {
+    color: #ffffff;
 }
 
 .meetTeam-button:hover {
@@ -66,7 +79,7 @@ body {
 .news-button {
     cursor: pointer;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .news-button:hover {
@@ -101,12 +114,12 @@ body {
     letter-spacing: normal;
     vertical-align: baseline;
     font-weight: bold;
-    font-size: 48px;
-    font-family: suez one, serif;
-    text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
-    color: #F00505;
+    font-size: 65px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(185, 222, 90) 0px 5px 0px;
+    color: #FF33C6;
     line-height: normal;
-    text-align: left;
+    text-align: center;
     margin: 0px;
     padding: 0px;
 }
@@ -114,11 +127,10 @@ body {
 .home-description1 {
     /* display: flex; */
     font-size: 15px;
-    font-style: italic;
     font-family: trirong,serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 1.8em;
-    text-align: justify;
+    text-align: center;
     overflow-wrap: break-word;
     letter-spacing: normal;
     visibility: inherit;
@@ -129,11 +141,10 @@ body {
 .home-description {
     /* display: flex; */
     font-size: 15px;
-    font-style: italic;
     font-family: trirong,serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 1.8em;
-    text-align: justify;
+    text-align: center;
     overflow-wrap: break-word;
     letter-spacing: normal;
     visibility: inherit;
@@ -143,11 +154,10 @@ body {
 .home-description2 {
     /* display: flex; */
     font-size: 15px;
-    font-style: italic;
     font-family: trirong,serif;
-    color: #000000;
+    color: #ffffff;
     line-height: 1.8em;
-    text-align: justify;
+    text-align: center;
     overflow-wrap: break-word;
     letter-spacing: normal;
     visibility: inherit;
@@ -156,23 +166,27 @@ body {
 }
 
 .stream-button {
-    border: 1px solid;
+    border: none;
     border-radius: 25px;
-    margin-right: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
     align-content: center;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding: 10px;
-    background-color: #F00505;
+    padding: 15px;
+    background-color: #f9e95f;
     text-decoration: none;
-    color: white;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 .stream-button:hover {
     background-color: #3D9BE9;
     cursor: pointer;
+    color: #ffffff;
 }
 /* Body Zone End */
 
@@ -200,6 +214,14 @@ body {
     background-color: #000000;
     background-position: left;
     opacity: 80%;
+}
+
+.burgir {
+    color: white;
+}
+
+.burgirClose {
+    color: #ffffff;
 }
 
 .libutton {
@@ -258,38 +280,51 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     align-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .home-textResponsive {
-    font-family: suez one, serif;
     font-size: 40px;
-    text-shadow: rgb(0 0 0 / 30%) 0px 5px 0px;
-    color: #F00505;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(185, 222, 90) 0px 5px 0px;
+    color: #FF33C6;
     letter-spacing: normal;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.home-textResponsive2 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(185, 222, 90) 0px 5px 0px;
+    color: #FF33C6;
+    letter-spacing: normal;
+    justify-content: center;
+    margin-top: 0px;
 }
 
 .home-descriptionResponsive {
     display: flex;
-    font-size: 15px;
-    color: gray;
-    font-style: italic;
+    font-size: 10px;
+    color: #ffffff;
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: medium;
+    margin-bottom: 10px;
 }
 
 .button-containerResponsive {
     display: flex;
-    border: 1px solid;
+    border: none;
     border-radius: 25px;
-    background-color: #F00505;
+    background-color: #f9e95f;
     text-decoration: none;
     padding: 10px;
     align-items: center;
     justify-content: center;
     margin-right: 80px;
     margin-left: 80px;
+    font-family: 'Poppins', sans-serif;
 }
 /* Responsive End */
