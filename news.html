@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | MRadio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="news.css">
     <link rel="icon" type="icon" href="favicon.ico">
 </head>
@@ -13,11 +22,11 @@
 <body>
     <!-- Navbar Zone -->
     <nav>
-        <div class="navbar-container">
+        <div class="navbar-container d-none d-md-flex">
             <img class="logo-mradio" style="width: 140; height: 99px;" src="/Assets/Station-Logo.png"
                 alt="Station-Logo">
             <ul class="ul-navigationbar">
-                <a href="index.html" class="home-button ">Home</a>
+                <a href="index.html" class="home-button">Home</a>
                 <a class="meetTeam-button">Meet Team</a>
                 <a href="podcast.html" class="podcast-button">Podcast</a>
                 <a href="news.html" class="news-button">News</a>
@@ -28,31 +37,169 @@
     <!-- Navbar Zone End -->
 
     <!-- Body Content -->
-    <div class="body-container">
-        <img class="fotoberita1" src="/Assets/fotoberita.jpg" alt="fotogaming">
-        <div class="body-desctiption">
-            <div class="adminbar">
-                <img class="admin-photo" src="/Assets/adminphoto.png" alt="MradioPodcast">
-                <div class="adminbar-text">
-                    <a class="admin-name">MRadio Umj</a>
-                    <a class="date-text" style="color: black;">Oct 27, 2022</a>
+    <div class="d-none d-md-inline">
+        <h1 class="news-text">News Today</h1>
+        <div class="container col-8 article d-none d-md-flex">
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Tokyo News.png" class="card-img-top" alt="berita1">
+                <div class="card-body article-body">
+                    <h5 class="card-title article-highlight">Sport Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CaJtOokvEdj/" target="_blank">
+                        <p class="card-text text-article">Arhan memang telah mencuri perhatian publik setelah tampil
+                            luar
+                            biasa
+                            bersama timnas Indonesia di Piala AFF 2020 lalu. Namun, ....
+                        </p>
+                    </a>
                 </div>
             </div>
-            <h3 class="headingberita-1">7 Cara Agar Refleksmu Bermain Video Game Bisa Bagus, Jadi Menang Terus</h3>
-            <a href="https://www.idntimes.com/tech/games/abraham-herdyanto/tips-membuat-reflek-bermain-video-game-jadi-bagus" target="_blank"
-                class="rangkuman-berita">Ada beberapa game yang dirancang khusus untuk melatih refleksmu, tapi itu saja
-                tidak cukup jika kamu menginginkan kemampuan refleks yang tinggi. Kamu perlu perhatikan hal-hal yang
-                lebih kecil. Berikut ini adalah hal-hal yang dimaksud tersebut. ...</a>
-            <div class="underline"></div>
-            <div class="comentview">
-                <span class="views" tabindex="0">0 views</span>
-                <a class="comments"><span class="P7Wc3k">0 comments</span></a>
-                <img id="like" onclick="document.getElementById('like').src='/Assets/loveiconred.png'" class="like-icon"
-                    src="/Assets/loveicon.png">
+
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Gempa.png" class="card-img-top" alt="berita1">
+                <div class="card-body">
+                    <h5 class="card-title article-highlight">The Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CaZGXGQPpoz/" target="_blank">
+                        <p class="card-text text-article"> gempa bumi magnitudo 6,2 yang terjadi di Pasaman Barat,
+                            Sumatera
+                            Barat, Jumat (25/2/2022) pukul 08.39 WIB akibat adanya aktivitas sesar ....
+                        </p>
+                    </a>
+                </div>
             </div>
+
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Noah.png" class="card-img-top" alt="berita1">
+                <div class="card-body">
+                    <h5 class="card-title article-highlight">Music Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CZJ0GfzPFU6/" target="_blank">
+                        <p class="card-text text-article">Diawal tahun 2022, Noah me-remake video klip “Menghapus
+                            Jejakmu”
+                            dengan melibatkan Angga Yunanda dan Vanesha Prescilla ....
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-showAll">
+            <a class="text-showAll" href="https://www.instagram.com/m_radioumj/" target="_blank">Show All Post</a>
         </div>
     </div>
     <!-- Body Content End -->
+
+    <!-- Navbar Responsive -->
+    <div class="navbar-Responsive d-md-none d-xs-inline">
+        <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
+        <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
+        <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
+        <ul class="ul-navigationbar d-none menu">
+            <li class="d-md-none libutton row">
+                <a class="home-buttonResponsive">Home</a>
+                <a class="meetTeam-buttonResponsive">Meet Team</a>
+                <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+                <a href="news.html" class="news-buttonResponsive">News</a>
+                <a class="topChart-buttonResponsive">Top Chart</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar Responsive End -->
+
+    <!-- Body Responsive -->
+    <div class="d-md-none d-xs-flex article-division">
+        <h1 class="news-text">News Today</h1>
+        <div class="container col-10 articleResponsive d-md-none d-xs-flex">
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Tokyo News.png" class="card-img-top" alt="berita1">
+                <div class="card-body article-body">
+                    <h5 class="card-title article-highlight">Sport Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CaJtOokvEdj/" target="_blank">
+                        <p class="card-text text-article">Arhan memang telah mencuri perhatian publik setelah tampil
+                            luar
+                            biasa
+                            bersama timnas Indonesia di Piala AFF 2020 lalu. Namun, ....
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Gempa.png" class="card-img-top" alt="berita1">
+                <div class="card-body">
+                    <h5 class="card-title article-highlight">The Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CaZGXGQPpoz/" target="_blank">
+                        <p class="card-text text-article"> gempa bumi magnitudo 6,2 yang terjadi di Pasaman Barat,
+                            Sumatera
+                            Barat, Jumat (25/2/2022) pukul 08.39 WIB akibat adanya aktivitas sesar ....
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card article-bar" style="width: 18rem;">
+                <img src="/Assets/Noah.png" class="card-img-top" alt="berita1">
+                <div class="card-body">
+                    <h5 class="card-title article-highlight">Music Highlight</h5>
+                    <a class="article-link" href="https://www.instagram.com/p/CZJ0GfzPFU6/" target="_blank">
+                        <p class="card-text text-article">Diawal tahun 2022, Noah me-remake video klip “Menghapus
+                            Jejakmu”
+                            dengan melibatkan Angga Yunanda dan Vanesha Prescilla ....
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-showAllResponsive d-md-none d-xs-flex">
+        <a class="text-showAllResponsive" href="https://www.instagram.com/m_radioumj/" target="_blank">Show All Post</a>
+    </div>
+    <!-- Body Responsive End -->
+
+    <!-- Navbar Responsive 2 -->
+    <i class="fa-solid fa-bars d-none burgir"></i>
+        <i class="fa-sharp fa-solid fa-x d-none burgirClose"></i>
+        <ul class="ul-navigationbar d-none menu">
+            <li class="d-md-none libutton row">
+                <a href="index.html" class="home-buttonResponsive">Home</a>
+                <a class="meetTeam-buttonResponsive">Meet Team</a>
+                <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+                <a href="news.html" class="news-buttonResponsive">News</a>
+                <a class="topChart-buttonResponsive">Top Chart</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar Responsive 2 End -->
+
+    <!-- Script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $('.menu').on('click', function (event) {
+            event.stopPropagation()
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.menu').toggleClass('d-none')
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.burgirClose').toggleClass('d-none')
+            $('.burgir').toggleClass('d-none')
+        })
+
+        $('.burgirClose').on('click', function (event) {
+            $('.menu').addClass('d-none')
+            $('.burgirClose').toggleClass('d-none')
+            event.stopPropagation()
+            $('.burgir').toggleClass('d-none')
+        })
+
+        $('.stream-button').on('click', function () {
+            window.location.href = "stream.html"
+        })
+    </script>
+    <!-- Script End -->
 </body>
 
 </html>

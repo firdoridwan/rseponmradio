@@ -110,13 +110,12 @@ body {
     margin-bottom: 50px;
 }
 
-.radio-bar {
+#cstrFreePlayerDiv {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding-left: 200px;
 }
 /* Radio Bar End */
 
