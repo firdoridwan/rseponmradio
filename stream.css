@@ -219,6 +219,7 @@ body {
 
 .meetTeam-buttonResponsive {
     color: white;
+    text-decoration: none;
 }
 
 .podcast-buttonResponsive {
