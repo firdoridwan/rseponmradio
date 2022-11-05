@@ -1,13 +1,9 @@
 *
 body {
-    background-image: url('/Assets/Desktop\ -\ 9.png');
+    background-image: url('/Assets/mradio\ new.png');
     background-size: 200vh;
     background-color: #202124;
 }
-
-/* body {
-    background-color: #202124;
-} */
 
 /* Navbar Zone */
 .navbar-container {
@@ -64,6 +60,7 @@ body {
 
 .topChart-button {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .meetTeam-button:hover {
@@ -110,7 +107,6 @@ body {
 }
 
 .home-text {
-    /* display: flex; */
     letter-spacing: normal;
     vertical-align: baseline;
     font-weight: bold;
@@ -189,7 +185,6 @@ body {
 /* Body Zone End */
 
 /* Responsive */
-
 .navbar-Responsive {
     display: flex;
     justify-content: space-between;
@@ -251,6 +246,7 @@ body {
 
 .meetTeam-buttonResponsive {
     color: white;
+    text-decoration: none;
 }
 
 .podcast-buttonResponsive {
@@ -265,6 +261,7 @@ body {
 
 .topChart-buttonResponsive {
     color: white;
+    text-decoration: none;
 }
 
 .body-containerResponsive {

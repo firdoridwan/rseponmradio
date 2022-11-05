@@ -57,6 +57,7 @@ body {
 .meetTeam-button {
     cursor: pointer;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .meetTeam-button:hover {
@@ -175,6 +176,7 @@ body {
 
 .meetTeam-buttonResponsive {
     color: white;
+    text-decoration: none;
 }
 
 .podcast-buttonResponsive {
@@ -189,6 +191,7 @@ body {
 
 .topChart-buttonResponsive {
     color: white;
+    text-decoration: none;
 }
 
 .text-profileResponsive2 {

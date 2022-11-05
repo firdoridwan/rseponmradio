@@ -1,18 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRadio | Top Chart</title><link rel="icon" type="icon" href="favicon.ico">
+    <title>MRadio | Top Chart</title>
+    <link rel="icon" type="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topchart.css">
 </head>
+
 <body>
-    
+    <!-- Navbar Zone -->
+    <nav>
+        <div class="container">
+            <div class="navbar-container d-none d-md-flex">
+                <img class="logo-mradio" src="/Assets/Station-Logo.png" alt="Station-Logo">
+                <ul class="ul-navigationbar row d-none d-md-inline">
+                    <a href="index.html" class="home-button ">Home</a>
+                    <a href="meetteam.html" class="meetTeam-button">Meet Team</a>
+                    <a href="podcast.html" class="podcast-button">Podcast</a>
+                    <a href="news.html" class="news-button">News</a>
+                    <a class="topChart-button">Top Chart</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Zone End -->
+
+    <!-- Body Zone -->
+    <div class="container d-none d-md-inline">
+        <h1 class="heading-text">M-Radio Playlist</h1>
+        <div class="container col-12 d-none d-md-flex playlist-bar">
+            <iframe class="playlist" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/5V6Cuf5FqRleCdBPudOT7h?utm_source=generator" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe class="playlist" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZEVXbObFQZ3JLcXt?utm_source=generator" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe class="playlist" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWT9uTRZAYj0c?utm_source=generator" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+    </div>
+    <!-- Body Zone End -->
+
+    <!-- Navbar Responsive -->
+    <div class="navbar-Responsive">
+        <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
+        <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
+        <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
+        <ul class="ul-navigationbar d-none menu">
+            <li class="d-md-none libutton row">
+                <a href="index.html" class="home-buttonResponsive">Home</a>
+                <a href="meetteam.html" class="meetTeam-buttonResponsive">Meet Team</a>
+                <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+                <a href="news.html" class="news-buttonResponsive">News</a>
+                <a class="topChart-buttonResponsive">Top Chart</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar Responsive End -->
+
+    <!-- Body Responsive -->
+    <div class="container d-md-none d-xs-inline">
+        <h1 class="heading-textResponsive">M-Radio Playlist</h1>
+        <div class="container col-8 playlist-barResponsive">
+            <iframe class="playlist-responsive1" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/5V6Cuf5FqRleCdBPudOT7h?utm_source=generator" width="100%"
+                height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+                <br> <br> <br>
+            <div id="hidden" style="display: none;">
+                <iframe class="playlist-responsive1" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZEVXbObFQZ3JLcXt?utm_source=generator"
+                    width="100%" height="380" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                <br> <br> <br>
+                <iframe class="playlist-responsive" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWT9uTRZAYj0c?utm_source=generator"
+                    width="100%" height="380" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                    <br> <br>
+            </div>
+        </div>
+        <div class="container col-4 d-md-inline">
+            <button class="btn btn-primary show-button" type="button"
+                onclick="document.getElementById('hidden').style.display='block'">Show More</button>
+        </div>
+    </div>
+    <!-- Body Responsive End -->
+
+    <!-- Script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $('.menu').on('click', function (event) {
+            event.stopPropagation()
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.menu').toggleClass('d-none')
+        })
+
+        $('.burgir').on('click', function (event) {
+            event.stopPropagation()
+            $('.burgirClose').toggleClass('d-none')
+            $('.burgir').toggleClass('d-none')
+        })
+
+        $('.burgirClose').on('click', function (event) {
+            $('.menu').addClass('d-none')
+            $('.burgirClose').toggleClass('d-none')
+            event.stopPropagation()
+            $('.burgir').toggleClass('d-none')
+        })
+
+        $('.stream-button').on('click', function () {
+            window.location.href = "stream.html"
+        })
+    </script>
+    <!-- Script End -->
 </body>
+
 </html>

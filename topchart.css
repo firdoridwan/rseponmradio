@@ -1,0 +1,238 @@
+* 
+body {
+    background-color: #202124;
+}
+
+/* Navbar Zone */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.ul-navigationbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.logo-mradio {
+    /* margin-left: 20px; */
+    width: 140px; 
+    height: 99px;
+}
+
+.podcast-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.home-button {
+    color: white;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.meetTeam-button {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.topChart-button {
+    color: gray;
+    cursor: pointer;
+}
+
+.meetTeam-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.podcast-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+
+.news-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.news-button:hover {
+    cursor: pointer;
+    color: #F00505;
+}
+/* Navbar Zone End */
+
+/* Body Zone */
+.heading-text {
+    letter-spacing: normal;
+    vertical-align: baseline;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(185, 222, 90) 0px 5px 0px;
+    color: #FF33C6;
+    line-height: normal;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 50px;
+}
+
+.playlist-bar {
+    gap: 20px;
+}
+
+.playlist {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/* Body Zone End */
+
+/* Responsive */
+.navbar-Responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: none;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.menu {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    right: 170px;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    background-position: left;
+    opacity: 80%;
+}
+
+.burgir {
+    color: white;
+}
+
+.burgirClose {
+    color: #ffffff;
+}
+
+.libutton {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    right: 170px;
+    top: 100px;
+    width: 50vw;
+    font-style: bold;
+    font-size: 20px;
+    gap: 35px;
+}
+
+.logo-mradioResponsive {
+    width: 80px;
+    height: 60px;
+    background: none;
+    position: relative;
+}
+
+.home-buttonResponsive {
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    text-decoration: none;
+    
+}
+
+.meetTeam-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.podcast-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.news-buttonResponsive {
+    color: white;
+    text-decoration: none;
+}
+
+.topChart-buttonResponsive {
+    color: #3D9BE9;
+}
+
+.body-containerResponsive {
+    display: flex;
+} 
+
+.heading-textResponsive {
+    letter-spacing: normal;
+    vertical-align: baseline;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: rgb(185, 222, 90) 0px 5px 0px;
+    color: #FF33C6;
+    line-height: normal;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+
+.playlist-responsive1 {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.playlist-responsive {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.show-button {
+    border: none;
+    border-radius: 25px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #f9e95f;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
