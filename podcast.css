@@ -83,6 +83,7 @@ body {
 .topChart-button {
     cursor: pointer;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .topChart-button:hover {
