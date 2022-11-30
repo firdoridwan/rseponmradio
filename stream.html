@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming | Mradio</title>
     <link rel="icon" type="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="stream.css">
@@ -35,11 +38,18 @@
         <div class="body-container d-none d-md-flex">
             <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
         </div>
-        <div id="cstrFreePlayerDiv" class="container col-5 d-none d-md-flex">
-            <iframe frameborder="0" width="500vw" height="170px" id="cstrFreePlayerFrame" scrolling="no"
-                src="//www.caster.fm/widgets/em_player.php?jsinit=true&amp;uid=558141&amp;t=blue&amp;c="
-                allowtransparency="true"></iframe>
+        <!-- <audio controls class="audiokontol">
+            <source src="https://freeuk24.listen2myradio.com/live.mp3?typeportmount=s1_4520_stream_555825379">
+        </audio> -->
+        <div class="player d-none d-md-inline">
+            <div class="imgbox">
+                <img class="logo-mradio" src="/Assets/MradioPodcast.jpeg" alt="logomradio">
+            </div>
+            <audio src="https://freeuk24.listen2myradio.com/live.mp3?typeportmount=s1_4520_stream_568767578"
+                type="audio/mp3" controls></audio>
         </div>
+    </div>
+    <div class="showzone d-none d-md-inline">
         <h2 class="program-text d-none d-md-flex container col-1">OUR SHOW</h2>
         <div class="program-logo d-none d-md-flex container col-1">
             <img class="program-logo1" src="/Assets/gambar 1.png" alt="sarangheo">
@@ -54,6 +64,38 @@
         <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
         <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
         <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
+    </div>
+    <!-- Navbar Responsive End -->
+
+    <!-- Body Responsive -->
+    <div class="d-md-none">
+        <div class="body-container d-md-none d-xs-flex">
+            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
+        </div>
+        <div class="radioZone-responsive d-md-none d-xs-flex">
+            <div class="playerResponsive d-md-none d-xs-inline">
+                <div class="imgboxResponsive">
+                    <img class="logo-mradioResponsive2" src="/Assets/MradioPodcast.jpeg" alt="logomradio">
+                </div>
+                <audio class="audioResponsive"
+                    src="https://us5freenew.listen2myradio.com/live.mp3?typeportmount=s1_29707_stream_795108413"
+                    type="audio/mp3" controls></audio>
+            </div>
+        </div>
+        <div class="showzoneResponsive d-md-none d-xs-flex">
+            <h2 class="program-textResponsive d-md-none d-xs-flex">OUR SHOW</h2>
+            <div class="program-logoResponsive d-md-none d-xs-flex container">
+                <img class="program1-responsive" src="/Assets/gambar 1.png" alt="sarangheo">
+                <img class="program1-responsive" src="/Assets/gambar 2.png" alt="AADC">
+                <img class="program1-responsive" src="/Assets/gambar 3.png" alt="Morning-Vibes">
+            </div>
+        </div>
+    </div>
+
+    <!-- Body Responsive End -->
+
+    <!-- Navbar Responsive -->
+    <div class="navbar-Responsive d-md-none d-xs-flex">
         <ul class="ul-navigationbar d-none menu">
             <li class="d-md-none libutton row">
                 <a href="index.html" class="home-buttonResponsive">Home</a>
@@ -65,25 +107,6 @@
         </ul>
     </div>
     <!-- Navbar Responsive End -->
-
-    <!-- Body Responsive -->
-    <div class="d-md-none">
-        <div class="body-container d-md-none d-xs-flex">
-            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
-        </div>
-        <div id="cstrFreePlayerDiv">
-            <iframe frameborder="0" width="100%" height="170px" id="cstrFreePlayerFrame" scrolling="no"
-                src="//www.caster.fm/widgets/em_player.php?jsinit=true&amp;uid=558141&amp;t=blue&amp;c="
-                allowtransparency="true"></iframe>
-        </div>
-        <h2 class="program-textResponsive d-md-none d-xs-flex">OUR SHOW</h2>
-        <div class="program-logoResponsive d-md-none d-xs-flex container">
-            <img class="program1-responsive" src="/Assets/gambar 1.png" alt="sarangheo">
-            <img class="program1-responsive" src="/Assets/gambar 2.png" alt="AADC">
-            <img class="program1-responsive" src="/Assets/gambar 3.png" alt="Morning-Vibes">
-        </div>
-    </div>
-    <!-- Body Responsive End -->
 
     <!-- Script -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -117,6 +140,11 @@
         })
     </script>
     <!-- Script End -->
+
+    <!-- Script Chat -->
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "9d045f3b-d0a2-43b1-bf07-9697bf162c48"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <!-- Script Chat End -->
 </body>
 
 </html>

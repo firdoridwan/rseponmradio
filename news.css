@@ -1,7 +1,7 @@
 *
 body {
     background-image: url('/Assets/Podcast\ new.png');
-    background-size: 189vh;
+    background-size: 200vh;
 }
 /* Navbar Zone */
 .navbar-container {
@@ -100,6 +100,9 @@ body {
     justify-content: center;
     padding-bottom: 44px;
     margin-top: none;
+}
+audio {
+    display: flex;
 }
 
 .article {
