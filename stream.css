@@ -326,6 +326,7 @@ body {
 }
 
 .showzoneResponsive {
+    display: flex;
     padding-top: 250px;
 }
 /* Radio Bar Responsive End */
