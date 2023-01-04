@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Streaming | Mradio</title>
-    <link rel="icon" type="icon" href="favicon.ico">
+    <link rel="icon" type="icon" href="/favicon.ico">
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +43,7 @@
     </nav>
     <div class="onair-logo d-none d-md-flex" style="display: flex; flex-direction: row;
     justify-content: center;">
-        <img class="on-air" style="width: 20%;"  src="/Assets/On_air.gif" alt="On_air">
+        <img class="on-air" style="width: 20%;" src="/Assets/On_air.gif" alt="On_air">
     </div>
     <!-- Navbar Zone End -->
 
@@ -56,7 +56,7 @@
     </div>
 
     <!-- Body Player -->
-    <div class="player">
+    <div class="player d-none d-md-flex">
         <div class="player__bar">
             <div class="player__album">
                 <div class="player__albumImg active-song" data-author="MRadio" data-song="Your Truly Friends" data
@@ -99,9 +99,11 @@
     <div class="showzone d-none d-md-flex">
         <h2 class="program-text d-none d-md-flex container col-1">OUR SHOW</h2>
         <div class="program-logo d-none d-md-flex container col-1">
-            <img class="program-logo1" src="/Assets/gambar 1.png" alt="sarangheo">
-            <img class="program-logo1" src="/Assets/gambar 2.png" alt="AADC">
-            <img class="program-logo1" src="/Assets/gambar 3.png" alt="Morning-Vibes">
+            <img class="program-logo1" src="/Assets/Morningvibes.png" alt="Morning-Vibes">
+            <img class="program-logo1" src="/Assets/Daylight.png" alt="Daylight">
+            <img class="program-logo1" src="/Assets/Afternoonchat.png" alt="Afternoonchat">
+            <img class="program-logo1" src="/Assets/Cover K-way.png" alt="K-Way">
+            <img class="program-logo1" src="/Assets/Openga.jpg" alt="Openga">
         </div>
     </div>
     <!-- Our Show End -->
@@ -112,41 +114,94 @@
         <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
         <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
     </div>
-    <div class="navbar-Responsive d-md-none d-xs-flex">
-        <ul class="ul-navigationbar d-none menu">
-            <li class="d-md-none libutton row">
-                <a href="/index.html" class="home-buttonResponsive">Home</a>
-                <a href="/meetteam.html" class="meetTeam-buttonResponsive">Meet Team</a>
-                <a href="/podcast.html" class="podcast-buttonResponsive">Podcast</a>
-                <a href="/news.html" class="news-buttonResponsive">News</a>
-                <a href="/topchart.html" class="topChart-buttonResponsive">Top Chart</a>
-            </li>
-        </ul>
-    </div>
     <!-- Navbar Responsive End -->
-
-    <div class="d-md-none">
-        <div class="radioZone-responsive d-md-none d-xs-flex">
-            <img class="on-airResponsive" src="/Assets/On_air.gif" alt="On_air">
-        </div>
-        <div class="showzoneResponsive d-md-none d-xs-flex">
-            <h2 class="program-textResponsive d-md-none d-xs-flex">OUR SHOW</h2>
-            <div class="program-logoResponsive d-md-none d-xs-flex container">
-                <img class="program1-responsive" src="/Assets/gambar 1.png" alt="sarangheo">
-                <img class="program1-responsive" src="/Assets/gambar 2.png" alt="AADC">
-                <img class="program1-responsive" src="/Assets/gambar 3.png" alt="Morning-Vibes">
+    <div class="player-responsive">
+        <div class="d-md-none">
+            <div class="radioZone-responsive d-md-none d-xs-flex">
+                <img class="on-airResponsive" src="/Assets/On_air.gif" alt="On_air">
             </div>
         </div>
-    </div>
 
-    <!-- Body Responsive End -->
+        <!-- Body Player Responsive -->
+        <div class="player-responsive d-md-none d-xs-flex">
+            <div class="player d-md-none d-xs-inline">
+                <div class="player__bar">
+                    <div class="player__album">
+                        <div class="player__albumImg active-song" data-author="MRadio" data-song="Your Truly Friends"
+                            data
+                            data-src="https://freeuk24.listen2myradio.com/live.mp3?typeportmount=s1_4520_stream_568767578"
+                            style="background-image: url(/Assets/MradioPodcast.jpeg)">
+                        </div>
+                    </div>
+                    <div class="player__controls">
 
-    <!-- END CONTENT  -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script src="js/main.js"></script>
+                        <div class="player__prev">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="player__play">
+                            <svg class="icon play">
+                                <use xlink:href="img/sprite.svg#play"></use>
+                            </svg>
+                            <svg class="icon pause">
+                                <use xlink:href="img/sprite.svg#pause"></use>
+                            </svg>
+                        </div>
+
+                        <div class="player__next">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="player__timeline">
+                    <p class="player__author"></p>
+                    <p class="player__song"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Body Player End Responsive -->
+
+        <!-- Footer Responsive -->
+        <footer>
+            <div class="showzoneResponsive d-md-none d-xs-flex">
+                <h2 class="program-textResponsive d-md-none d-xs-flex">OUR SHOW</h2>
+                <div class="program-logoResponsive d-md-none d-xs-flex container">
+                    <img class="program1-responsive" src="/Assets/Morningvibes.png" alt="Morning-Vibes">
+                    <img class="program1-responsive" src="/Assets/Daylight.png" alt="Daylight">
+                    <img class="program1-responsive" src="/Assets/Afternoonchat.png" alt="Afternoonchat">
+                    <div style="display: flex;">
+                        <img class="program1-responsive" src="/Assets/Cover K-way.png" alt="K-Way">
+                        <img class="program1-responsive" src="/Assets/Openga.jpg" alt="Openga">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer Responsive End -->
+        <!-- Menu Responsive -->
+        <div class="navbar-Responsive d-md-none d-xs-flex">
+            <ul class="ul-navigationbar d-none menu">
+                <li class="d-md-none libutton row">
+                    <a href="/index.html" class="home-buttonResponsive">Home</a>
+                    <a href="/meetteam.html" class="meetTeam-buttonResponsive">Meet Team</a>
+                    <a href="/podcast.html" class="podcast-buttonResponsive">Podcast</a>
+                    <a href="/news.html" class="news-buttonResponsive">News</a>
+                    <a href="/topchart.html" class="topChart-buttonResponsive">Top Chart</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Menu Responsive End -->
+
+        <!-- END CONTENT  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 <script type="text/javascript">
 

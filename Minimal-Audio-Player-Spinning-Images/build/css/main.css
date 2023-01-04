@@ -111,7 +111,6 @@ body,html{
 body {
     background-image: url('/Assets/Stream\ New.png');
     background-size: 200vh;
-    position:relative;
 }
 
 .player,.player__album:before,.player__play svg {
@@ -386,6 +385,9 @@ body {
 .program-logo1 {
     border-radius: 18px;
     width: 100%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 /* Show Zone End */
 
@@ -395,9 +397,11 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: none;
-    gap: 0px;
+    margin-right: 15px;
+    margin-left: 10px;
+    gap: 200px;
 }
 
 .menu {
@@ -405,10 +409,10 @@ body {
     display: flex;
     position: fixed;
     flex-direction: column;
-    right: 200px;
+    right: 219px;
     top: 0;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
     background-color: #000000;
     opacity: 80%;
 }
@@ -461,7 +465,6 @@ body {
 
 .burgir{
     color: #ffffff;
-    margin-right: 20px;
 }
 
 .burgirClose {
@@ -488,6 +491,9 @@ body {
 
 .program1-responsive {
     border-radius: 18px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .program-textResponsive {
@@ -509,10 +515,15 @@ body {
 }
 
 .showzoneResponsive {
-    padding-top: 200px;
+    padding-top: 300px;
 }
 
 .on-airResponsive {
     display: flex;
     width: 50%;
+}
+
+.player-responsive {
+    display: flex;
+    flex-direction: column;
 }
