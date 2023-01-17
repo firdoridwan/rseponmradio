@@ -262,6 +262,9 @@ body {
     position:relative;
 }
 
+.icon {
+    color: #000000;
+}
 .player__play svg {
     font-size:20px;
 }
