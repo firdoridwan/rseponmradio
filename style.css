@@ -159,7 +159,7 @@ body {
     letter-spacing: normal;
     visibility: inherit;
     margin: 0;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .stream-button {
@@ -191,7 +191,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     padding-top: none;
     margin-right: 15px;
     margin-left: 10px;
@@ -201,7 +201,7 @@ body {
     display: flex;
     position: fixed;
     flex-direction: column;
-    right: 170px;
+    right: 200px;
     top: 0;
     width: 50vw;
     height: 100vh;
@@ -324,3 +324,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 /* Responsive End */
+
+/* ADS */
+.ads {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.ads-responsive {
+    display: flex;
+    justify-content: center;
+}
