@@ -20,21 +20,37 @@
     <nav>
         <div class="container">
             <div class="navbar-container d-none d-md-flex">
-                <img class="logo-mradio" src="/Assets/Station-Logo.png" alt="Station-Logo">
-                <ul class="ul-navigationbar row d-none d-md-inline">
-                    <a href="index.html" class="home-button ">Home</a>
-                    <a href="meetteam.html" class="meetTeam-button">Meet The Team</a>
-                    <a href="podcast.html" class="podcast-button">Podcast</a>
-                    <a href="news.html" class="news-button">News</a>
-                    <a href="topchart.html" class="topChart-button">Top Chart</a>
-                </ul>
+                <div class="navbar-container d-none d-md-flex">
+                    <div class="logo-container d-none d-md-flex">
+                        <img class="logo-mradio" src="/Assets/Station-Logo.png" alt="Station-Logo">
+                    </div>
+                    <div class="ul-division">
+                        <ul class="ul-navigationbar row d-none d-md-inline">
+                            <a href="index.html" class="home-button ">Home</a>
+                            <a href="meetteam.html" class="meetTeam-button">Meet The Team</a>
+                            <a href="podcast.html" class="podcast-button">Podcast</a>
+                            <a href="news.html" class="news-button">News</a>
+                            <a href="topchart.html" class="topChart-button">Top Chart</a>
+                        </ul>
+                    </div>
+                    <div class="logo-kampus">
+                        <a href="https://ilkom.umj.ac.id/" target="_blank">
+                            <img class="logo-ilkom" src="/Logo/logo UMJ gabung ilkom Transparan.png" alt="logo-ilkom">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
     </nav>
     <!-- Navbar Zone End -->
 
     <!-- Navbar Responsive -->
     <div class="navbar-Responsive">
+        <div class="logo-responsive d-md-none d-xs-flex">
+            <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
+            <a href="https://ilkom.umj.ac.id/" target="_blank">
+                <img class="logo-ilkomResponsive" src="/Assets/logo umjjjjjjj.png" alt="logo-ilkom">
+            </a>
+        </div>
         <ul class="ul-navigationbar d-none menu">
             <li class="d-md-none libutton row">
                 <a href="index.html" class="home-buttonResponsive">Home</a>
@@ -44,7 +60,6 @@
                 <a href="topchart.html" class="topChart-buttonResponsive">Top Chart</a>
             </li>
         </ul>
-        <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
         <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
         <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
     </div>
@@ -62,17 +77,17 @@
     </div>
     <!-- Body Zone End -->
 
-        <!-- Body Zone Responsive-->
-        <div class="container col-10 d-md-none d-xs-inline">
-            <h1 class="podcast-txtResponsive">M-Radio Podcast</h1>
-        </div>
-        <div class="container col-10 d-md-none d-xs-flex">
-            <iframe class="body-divisionResponsive" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/3gNR9w4heoyHLtkb2pnDvb?utm_source=generator" width="100%"
-                height="380" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        <!-- Body Zone Responsive End -->
+    <!-- Body Zone Responsive-->
+    <div class="container col-10 d-md-none d-xs-inline">
+        <h1 class="podcast-txtResponsive">M-Radio Podcast</h1>
+    </div>
+    <div class="container col-10 d-md-none d-xs-flex">
+        <iframe class="body-divisionResponsive" style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/3gNR9w4heoyHLtkb2pnDvb?utm_source=generator" width="100%"
+            height="380" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <!-- Body Zone Responsive End -->
 
     <!-- Script -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

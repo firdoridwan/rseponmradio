@@ -39,6 +39,34 @@
     padding-bottom: 50px;
 }
 
+.logo-container {
+    display: flex;
+    gap: 20px;
+    margin-right: 0;
+}
+
+.logo-mradio {
+    /* margin-left: 20px; */
+    width: 140px; 
+    height: 99px;
+}
+
+.logo-kampus {
+    display: flex;
+    border: 1px;
+    width: 90ppx;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.logo-ilkom {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    margin: none;
+}
+
 .home-button {
     text-decoration: none;
     color: #ffffff;
@@ -401,7 +429,7 @@ body {
     padding-top: none;
     margin-right: 15px;
     margin-left: 10px;
-    gap: 200px;
+    gap: 20px;
 }
 
 .menu {
@@ -430,12 +458,21 @@ body {
     gap: 35px;
 }
 
+.logo-responsive {
+    display: flex;
+    gap: 10px;
+}
+
 .logo-mradioResponsive {
     width: 80px;
     height: 60px;
     background: none;
     position: relative;
-    margin-left: 20px;
+}
+
+.logo-ilkomResponsive {
+    display: flex;
+    width: 100px;
 }
 
 .home-buttonResponsive {
@@ -463,7 +500,7 @@ body {
     text-decoration: none;
 }
 
-.burgir{
+.burgir {
     color: #ffffff;
 }
 

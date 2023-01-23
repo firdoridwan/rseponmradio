@@ -13,10 +13,11 @@ body {
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    gap: 25px;
+    gap: 150px;
     font-family: Arial,Helvetica,sans-serif;
     font-weight: bold;
     font-size: 15px;
+    padding-bottom: 80px;
 }
 
 .ul-navigationbar {
@@ -24,18 +25,40 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     font-family: Arial,Helvetica,sans-serif;
     font-weight: bold;
     font-size: 15px;
     padding-bottom: 50px;
 }
 
+.logo-container {
+    display: flex;
+    gap: 20px;
+}
+
 .logo-mradio {
+    /* margin-left: 20px; */
     width: 140px; 
     height: 99px;
+}
+
+.logo-kampus {
+    display: flex;
+    border: 1px;
+    width: 90ppx;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.logo-ilkom {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    margin: none;
 }
 
 .home-button {
@@ -161,6 +184,11 @@ body {
     gap: 35px;
 }
 
+.logo-responsive {
+    display: flex;
+    gap: 10px;
+}
+
 .logo-mradioResponsive {
     width: 80px;
     height: 60px;
@@ -168,6 +196,10 @@ body {
     position: relative;
 }
 
+.logo-ilkomResponsive {
+    display: flex;
+    width: 100px;
+}
 .home-buttonResponsive {
     color: #ffffff;
     font-size: 20px;
