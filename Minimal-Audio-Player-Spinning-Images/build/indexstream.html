@@ -42,18 +42,36 @@
                         <a href="/topchart.html" class="topChart-button">Top Chart</a>
                     </ul>
                 </div>
-                <div class="logo-kampus">
+                <!-- <div class="logo-kampus">
                     <a href="https://ilkom.umj.ac.id/" target="_blank">
                         <img class="logo-ilkom" src="/Logo/logo UMJ gabung ilkom Transparan.png" alt="logo-ilkom">
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
-    <div class="onair-logo d-none d-md-flex" style="display: flex; flex-direction: row;
+    <!-- <div class="onair-logo d-none d-md-flex" style="display: flex; flex-direction: row;
     justify-content: center;">
         <img class="on-air" style="width: 20%;" src="/Assets/On_air.gif" alt="On_air">
+    </div> -->
+    <div class="clock d-none d-md-flex">
+        <div class="time">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="menit">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span id="session">PM</span>
+        </div>
     </div>
+    <!-- <div class="clock">
+        <div id="jam"></div>
+        <div id="unit">
+            <span>Jam</span>
+            <span>Menit</span>
+            <span>Detik</span>
+        </div>
+    </div> -->
     <!-- Navbar Zone End -->
 
     </script>
@@ -81,6 +99,8 @@
                     </svg>
                 </div>
 
+
+                
                 <div class="player__play">
                     <svg class="icon play">
                         <use xlink:href="img/sprite.svg#play"></use>
@@ -122,9 +142,9 @@
     <div class="navbar-Responsive d-md-none d-xs-flex">
         <div class="logo-responsive d-md-none d-xs-flex">
             <img class="logo-mradioResponsive d-md-none d-xs-inline" src="/Assets/Station-Logo.png" alt="Station-Logo">
-            <a href="https://ilkom.umj.ac.id/" target="_blank">
+            <!-- <a href="https://ilkom.umj.ac.id/" target="_blank">
                 <img class="logo-ilkomResponsive" src="/Assets/logo umjjjjjjj.png" alt="logo-ilkom">
-            </a>
+            </a> -->
         </div>
         <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
         <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
@@ -223,6 +243,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -240,6 +261,54 @@
 
 <!-- Script Menu -->
 <script>
+    function displayTime() {
+        var dateTime = new Date();
+        var hours = dateTime.getHours();
+        var minutes = dateTime.getMinutes();
+        var seconds = dateTime.getSeconds();
+        var session = document.getElementById('session');
+
+        if (hours >= 12) {
+            session.innerHTML = 'PM';
+        }
+        else {
+            session.innerHTML = 'AM'
+        }
+
+        document.getElementById('hours').innerHTML = hours;
+        document.getElementById('menit').innerHtML = minutes;
+        document.getElementById('seconds').innerHTML = seconds;
+    }
+
+    setInterval(displayTime, 10);
+
+    function jam() {
+        setInterval(function () {
+            var waktu = new Date();
+            var jam = document.getElementById("jam");
+            var hours = waktu.getHours();
+            var minutes = waktu.getMinutes();
+            var seconds = waktu.getSeconds();
+
+            if (waktu.getHours() < 10) {
+                hours = "0" + waktu.getHours();
+            }
+            if (waktu.getMinutes() < 10) {
+                minutes = "0" + waktu.getMinutes();
+            }
+            if (waktu.getSeconds() < 10) {
+                seconds = "0" + waktu.getSeconds();
+            }
+            jam.innerHTML = "<span>" + hours + "</span>"
+            + "<span>" + minutes + "</span>" +
+            "<span>" + seconds + "</span>"
+
+            var spans = jam.getElementsByTagName("span");
+            animation(spans[2]); if (seconds == 0) animations(spans [1]);
+            if (minutes == 0 && seconds == 0) animation(spans[0]);
+        }, 1000);
+    }
+
     $('.menu').on('click', function (event) {
         event.stopPropagation()
     })
