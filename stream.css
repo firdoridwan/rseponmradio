@@ -301,6 +301,15 @@ body {
     margin-left: 0;
 }
 
+.special-responsive {
+    display: flex;
+    width: 20%;
+    height: 10%;
+    gap: 20px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
 .program1-responsive {
     border-radius: 18px;
     width: 100px;
