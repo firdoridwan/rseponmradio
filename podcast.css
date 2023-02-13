@@ -4,6 +4,9 @@ body {
     background-size: 200vh;
 }
 
+.container {
+    gap: 50px;
+}
 
 /* Navbar Zone */
 .navbar-container {
@@ -131,6 +134,40 @@ body {
     padding-bottom: 40px;
 }
 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+}
+
+.simamat-title {
+    color: #F00505;
+}
+
+.wanitalks-title {
+    color: #FF33C6;
+}
+
+.kenapasih-title {
+    color: #3D9BE9;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+.btn {
+    background-color: #f9e95f;
+    color: #000000;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: #FF33C6;
+    color: #ffffff;
+}
+
 .body-division {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -154,7 +191,7 @@ body {
     display: flex;
     position: fixed;
     flex-direction: column;
-    right: 170px;
+    right: 200px;
     top: 0;
     width: 50vw;
     height: 100vh;
@@ -259,20 +296,13 @@ body {
 }
 
 .podcast-containerResponsive {
-    display: flex;
-    right: 0;
-    left: 40px;
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    /* padding-top: 110px; */
+    gap: 10px;
+}
+
+.card {
     box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: -10px 14px 5px 1px rgba(0,0,0,0.75);
-    border-radius: 15px;
-    margin-right: 200px;
-    margin-left: 200px;
 }
 
 .button-moreResponsive {

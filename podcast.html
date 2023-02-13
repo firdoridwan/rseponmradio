@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="podcast.css">
 </head>
 
@@ -51,15 +53,6 @@
                 <img class="logo-ilkomResponsive" src="/Assets/logo umjjjjjjj.png" alt="logo-ilkom">
             </a> -->
         </div>
-        <ul class="ul-navigationbar d-none menu">
-            <li class="d-md-none libutton row">
-                <a href="index.html" class="home-buttonResponsive">Home</a>
-                <a href="meetteam.html" class="meetTeam-buttonResponsive">Meet The Team</a>
-                <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
-                <a href="news.html" class="news-buttonResponsive">News</a>
-                <a href="topchart.html" class="topChart-buttonResponsive">Top Chart</a>
-            </li>
-        </ul>
         <i class="fa-solid fa-bars d-xs-inline d-md-none burgir"></i>
         <i class="fa-sharp fa-solid fa-x d-md-none d-none burgirClose"></i>
     </div>
@@ -70,10 +63,40 @@
         <h1 class="podcast-txt">M-Radio Podcast</h1>
     </div>
     <div class="container d-none d-md-flex col-7">
-        <iframe class="body-division" style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/3gNR9w4heoyHLtkb2pnDvb?utm_source=generator" width="100%"
-            height="380" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="card simamat" style="width: 18rem;">
+            <img src="/Assets/MradioPodcast.jpeg" class="card-img-top" alt="SI-MAMAT">
+            <div class="card-body">
+                <h5 class="card-title simamat-title">SI MAMAT</h5>
+                <p class="card-text">SIMAMAT (Special Malam Jumat) Podcast horor yang akan menceritakan
+                    pengalaman-pengalaman horor yang pernah dialami oleh para M-Listener</p>
+                <a href="https://open.spotify.com/show/1dHlTpd8YiLWTkmKrMDpoV?si=bAVoBcMtRgy74rgL4annLA"
+                    target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/Assets/MradioPodcast.jpeg" class="card-img-top" alt="SI-MAMAT">
+            <div class="card-body">
+                <h5 class="card-title wanitalks-title">WANITALKS</h5>
+                <p class="card-text">WANITALKS salah satu podcast dari M-Radio yang berisi obralan keluh kesah dari para
+                    wanita. Kalo mau tau kaya gimana langsung aja yuk dengerin</p>
+                <a href="https://open.spotify.com/show/29cFABhdKh6c9rTIDbjJJy" target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/Assets/kenapasih.jpg" class="card-img-top" alt="SI-MAMAT">
+            <div class="card-body">
+                <h5 class="card-title kenapasih-title">Kenapa Sih?</h5>
+                <p class="card-text">Kenapa Sih? salah satu podcast dari penyiar M-Radio yang membahas
+                    pertanyaan-pertanyaan yang ada dikehidupan sehari-hari, yang kadang bikin ga bisa tidur</p>
+                <a href="https://m.pogo.fm/album/3785989382?s_locale=en_US" target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- Body Zone End -->
 
@@ -81,13 +104,60 @@
     <div class="container col-10 d-md-none d-xs-inline">
         <h1 class="podcast-txtResponsive">M-Radio Podcast</h1>
     </div>
-    <div class="container col-10 d-md-none d-xs-flex">
-        <iframe class="body-divisionResponsive" style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/3gNR9w4heoyHLtkb2pnDvb?utm_source=generator" width="100%"
-            height="380" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="container col-10 d-md-none d-xs-flex podcast-containerResponsive">
+        <div class="card simamat" style="width: 18rem;">
+            <img src="/Assets/MradioPodcast.jpeg" class="card-img-top" alt="SI-MAMAT">
+            <div class="card-body">
+                <h5 class="card-title simamat-title">SI MAMAT</h5>
+                <p class="card-text">SIMAMAT (Special Malam Jumat) Podcast horor yang akan menceritakan
+                    pengalaman-pengalaman horor yang pernah dialami oleh para M-Listener</p>
+                <a href="https://open.spotify.com/show/1dHlTpd8YiLWTkmKrMDpoV?si=bAVoBcMtRgy74rgL4annLA"
+                    target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="card" id="hide" style="width: 18rem;">
+            <img src="/Assets/COVER WANITALKS.JPG" class="card-img-top" alt="WANITALKS">
+            <div class="card-body">
+                <h5 class="card-title wanitalks-title">WANITALKS</h5>
+                <p class="card-text">WANITALKS salah satu podcast dari M-Radio yang berisi obralan keluh kesah dari
+                    para
+                    wanita. Kalo mau tau kaya gimana langsung aja yuk dengerin</p>
+                <a href="https://open.spotify.com/show/29cFABhdKh6c9rTIDbjJJy" target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="card" id="hide" style="width: 18rem;">
+            <img src="/Assets/kenapasih.jpg" class="card-img-top" alt="kenapasih">
+            <div class="card-body">
+                <h5 class="card-title kenapasih-title">Kenapa Sih?</h5>
+                <p class="card-text">Kenapa Sih? salah satu podcast dari penyiar M-Radio yang membahas
+                    pertanyaan-pertanyaan yang ada dikehidupan sehari-hari, yang kadang bikin ga bisa tidur</p>
+                <a href="https://m.pogo.fm/album/3785989382?s_locale=en_US" target="_blank">
+                    <button class="btn btn-primary" type="submit">Listen</button>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- Body Zone Responsive End -->
+
+    <!-- Menu Resposive -->
+    <div class="menu-responsive">
+        <ul class="ul-navigationbar d-none menu">
+            <li class="d-md-none libutton row">
+                <a href="index.html" class="home-buttonResponsive">Home</a>
+                <a href="meetteam.html" class="meetTeam-buttonResponsive">Meet The Team</a>
+                <a href="podcast.html" class="podcast-buttonResponsive">Podcast</a>
+                <a href="news.html" class="news-buttonResponsive">News</a>
+                <a href="topchart.html" class="topChart-buttonResponsive">Top Chart</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Menu Responsive End -->
 
     <!-- Script -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
