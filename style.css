@@ -280,10 +280,15 @@ body {
     position: relative;
 }
 
-/* .logo-ilkomResponsive {
+.logo-responsive {
     display: flex;
-    width: 50px;
-} */
+    gap: 10px;
+}
+
+.logo-ilkomResponsive {
+    display: flex;
+    width: 100px;
+}
 
 .home-buttonResponsive {
     color: #3D9BE9;
