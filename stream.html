@@ -34,18 +34,8 @@
     <!-- Navbar Zone End -->
 
     <!-- Body Zone -->
-    <div>
-        <div class="body-container d-none d-md-flex">
-            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
-        </div>
-        <!-- <div class="player d-none d-md-inline">
-            <div class="imgbox">
-                <img class="logo-mradio" src="/Assets/MradioPodcast.jpeg" alt="logomradio">
-            </div>
-            <audio src="https://freeuk24.listen2myradio.com/live.mp3?typeportmount=s1_4520_stream_568767578"
-                type="audio/mp3" controls></audio>
-        </div> -->
-
+    <div class="d-none d-md-inline">
+        <div id="MyClockDisplay" class="clock"></div>
         <!-- Radio Zone -->
         <div class="audio-player d-none d-md-flex">
             <iframe class="caster-bar" frameborder="0" width="100%" height="170px" id="cstrFreePlayerFrame"
@@ -53,8 +43,8 @@
                 allowtransparency="true"></iframe>
             <div id="cstrFreePlayerDiv"></div>
         </div>
-        <!-- Radio Zone End -->
     </div>
+    <!-- Radio Zone End -->
     <div class="showzone d-none d-md-inline">
         <h2 class="program-text d-none d-md-flex container col-1">OUR SHOW</h2>
         <div class="program-logo d-none d-md-flex container col-1">
@@ -82,9 +72,9 @@
     <!-- Navbar Responsive End -->
 
     <!-- Body Responsive -->
-    <div class="d-md-none">
+    <div>
         <div class="body-container d-md-none d-xs-flex">
-            <img class="on-air" src="/Assets/On_air.gif" alt="On_air">
+            <div class="clockResponsive" id="clockResponsive"></div>
         </div>
         <div class="radioZone-responsive d-md-none d-xs-flex">
             <iframe frameborder="0" width="100%" height="170px" id="cstrFreePlayerFrame" scrolling="no"
@@ -104,7 +94,6 @@
             <img src="/Assets/Openga.jpg" class="img-thumbnail program1-responsive" alt="Openga">
             <img src="/Assets/SIdak.jpg" class="img-thumbnail program1-responsive" alt="SIdak">
         </div>
-    </div>
     </div>
 
     <!-- Navbar Responsive -->
@@ -159,6 +148,68 @@
     <script
         type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "9d045f3b-d0a2-43b1-bf07-9697bf162c48"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
     <!-- Script Chat End -->
+
+    <!-- Script Clock -->
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+        }
+
+        showTime();
+        setInterval(showTime, 1000);
+    </script>
+    <!-- Script Clock End -->
+
+    <!-- Script Clock Responsive -->
+    <script>
+        function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if (h == 0) {
+                h = 12;
+            }
+            if (h => 12) {
+                session = "PM";
+            }
+
+            if (h > 12) {
+                h = h - 12;
+            }
+            m = (m < 10) ? m = "0" + m : m;
+            s = (s < 10) ? s = "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            $('#clockResponsive').html(time);
+            setTimeout(showTime, 1000);
+        }
+        showTime();
+    </script>
+    <!-- Script Clock Responsive End -->
 </body>
 
 </html>
